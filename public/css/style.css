@@ -1,0 +1,64 @@
+.toggle{
+  padding-bottom: 10px;
+}
+
+.toggleItem {
+  border: 20px black;
+  background: darkturquoise;
+  color: white;
+  text-align: center;
+  margin: .1em;
+  width: 100%;
+}
+
+.list-container {
+  width: 100%;
+}
+
+.step-list-item {
+  width: 100%;
+  align-items: left;
+}
+
+.mainView {
+  background: #e6e3e8;
+  padding: 20px;
+}
+
+.stepDetail {
+  background: white;
+}
+
+.step-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.process-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.process-view{
+  display: flex;
+  flex-direction: column;
+}
+
+.step-detail-mod{
+  background-color: '#fffff';
+  padding: 20px;
+}
+
+.clearfix :after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.stepsFont {
+  font-size: 0.5em;
+  line-height: 0.5em;
+}
+

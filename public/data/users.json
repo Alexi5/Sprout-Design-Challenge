@@ -1,0 +1,84 @@
+[{
+        "teamName": "catalytic",
+        "username": "andrew",
+        "userID": "ffa6811a52cc",
+        "fullName": "Andrew Thiermann  ",
+        "isTeamOwner": false,
+        "isTeamAdmin": false,
+        "isRestricted": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "ben",
+        "userID": "b22d120e11bc",
+        "fullName": "Ben Blair",
+        "isTeamOwner": false,
+        "isTeamAdmin": false,
+        "isRestricted": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "gabe",
+        "userID": "e2ab9c0089bf",
+        "isTeamOwner": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "kcent",
+        "userID": "b4960946b7a",
+        "isTeamOwner": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "matt",
+        "email": "matt@catalytic.com",
+        "userID": "177174ccae45",
+        "isTeamOwner": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "neil",
+        "email": "neil@catalytic.com",
+        "userID": "fb5a8df06934",
+        "isTeamOwner": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "ravi",
+        "userID": "8332c2810509",
+        "isTeamOwner": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "scott",
+        "userID": "7c6e45bf6462",
+        "isTeamOwner": false,
+        "isIntegration": false
+    },
+    {
+        "teamName": "catalytic",
+        "username": "sean",
+        "userID": "039993dfa3c1",
+        "fullName": "Sean Chou",
+        "isTeamOwner": true,
+        "phone": "8580000000",
+        "notificationPreference": {
+            "email": {
+                "enabled": false
+            },
+            "textMessaging": {
+                "enabled": false
+            },
+            "pushNotifications": {
+                "enabled": false
+            }
+        }
+    }
+]
