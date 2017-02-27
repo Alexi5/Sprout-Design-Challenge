@@ -19,14 +19,6 @@ class Process extends Component {
     this.setProcessDescription = this.setProcessDescription.bind(this)
   }
 
-
-  componentDidReceiveProps(props){
-    this.setState({
-      displayName: process.displayName, 
-      processDescription: process.description
-    })
-  }
-
   //helper to check if box is in edit mode
   toggleEditing(edit){
     this.setState({isEditing: edit})
@@ -122,6 +114,8 @@ class Process extends Component {
       return (
         <div>
           <div className="process-details">
+            <p>click field heading to edit field</p>
+            <br/>
             <div className="process-input">
               {this.renderProcessInput('displayName', selectedProcess)}
             </div>

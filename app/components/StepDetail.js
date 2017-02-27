@@ -128,6 +128,14 @@ class StepDetail extends Component {
 
   /// updating displayName and description
   renderStepInput(field, step){
+    if(this.props.newName){
+      step.displayName = this.props.newName
+    }
+
+    if(this.props.newDescription){
+      step.description = this.props.newDescription
+    }
+
     if(field === 'displayName'){
       if(this.state.isEditing){
         return(
@@ -184,11 +192,12 @@ class StepDetail extends Component {
     }
   }
 
-   //handles input change into the text boxes
+  //handles input change into the text boxes
   editStep(field, e) {
     this.setState({
       [field]: e.target.value 
     });
+
   }
 
   // edit the step name 
@@ -208,7 +217,6 @@ class StepDetail extends Component {
   render() {
 
     //TO DO: include warning / check and conditions for empty input boxes
-
     if (this.props.allSteps.length && this.props.selectedStep) {
       
       let step = this.props.allSteps[this.props.selectedStep - 1];
@@ -264,6 +272,8 @@ const mapStateToProps = (state) => {
     return {
         allSteps: state.steps.allSteps,
         selectedStep: state.steps.selectedStep,
+        newName: state.steps.displayName,
+        newDescription: state.steps.description,
         users: state.users.allUsers
     };
 }

@@ -5801,7 +5801,7 @@ exports.default = function () {
     var nextState = Object.assign({}, state);
     switch (action.type) {
         case FETCH_STEPS:
-            nextState.allSteps = [].concat(_toConsumableArray(nextState.allSteps), _toConsumableArray(action.allSteps));
+            nextState.allSteps = [].concat(_toConsumableArray(state.allSteps), _toConsumableArray(action.allSteps));
             break;
         case FETCH_STEP:
             nextState.selectedStep = action.selectedStep;
@@ -12955,6 +12955,14 @@ var StepDetail = function (_Component) {
     value: function renderStepInput(field, step) {
       var _this3 = this;
 
+      if (this.props.newName) {
+        step.displayName = this.props.newName;
+      }
+
+      if (this.props.newDescription) {
+        step.description = this.props.newDescription;
+      }
+
       if (field === 'displayName') {
         if (this.state.isEditing) {
           return _react2.default.createElement(
@@ -13088,7 +13096,6 @@ var StepDetail = function (_Component) {
     value: function render() {
 
       //TO DO: include warning / check and conditions for empty input boxes
-
       if (this.props.allSteps.length && this.props.selectedStep) {
 
         var step = this.props.allSteps[this.props.selectedStep - 1];
@@ -13187,6 +13194,8 @@ var mapStateToProps = function mapStateToProps(state) {
   return {
     allSteps: state.steps.allSteps,
     selectedStep: state.steps.selectedStep,
+    newName: state.steps.displayName,
+    newDescription: state.steps.description,
     users: state.users.allUsers
   };
 };
@@ -22401,7 +22410,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps)(ProcessContainer);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -22452,18 +22461,10 @@ var Process = function (_Component) {
     return _this;
   }
 
+  //helper to check if box is in edit mode
+
+
   _createClass(Process, [{
-    key: 'componentDidReceiveProps',
-    value: function componentDidReceiveProps(props) {
-      this.setState({
-        displayName: process.displayName,
-        processDescription: process.description
-      });
-    }
-
-    //helper to check if box is in edit mode
-
-  }, {
     key: 'toggleEditing',
     value: function toggleEditing(edit) {
       this.setState({ isEditing: edit });
@@ -22621,6 +22622,12 @@ var Process = function (_Component) {
             'div',
             { className: 'process-details' },
             _react2.default.createElement(
+              'p',
+              null,
+              'click field heading to edit field'
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
               'div',
               { className: 'process-input' },
               this.renderProcessInput('displayName', selectedProcess)
@@ -22714,7 +22721,6 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Process);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 275 */

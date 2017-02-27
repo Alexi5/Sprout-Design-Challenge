@@ -46,7 +46,7 @@ export default function (state = initialState, action) {
     let nextState = Object.assign({}, state)
     switch (action.type) {
         case FETCH_STEPS:
-            nextState.allSteps = [...nextState.allSteps, ...action.allSteps];
+            nextState.allSteps = [...state.allSteps, ...action.allSteps];
             break;
         case FETCH_STEP:
             nextState.selectedStep = action.selectedStep;
