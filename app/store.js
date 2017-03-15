@@ -4,6 +4,9 @@ import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
 
 //creates store with rootReducer, middleware
-const store = createStore(rootReducer, applyMiddleware(createLogger({collapsed: true}), thunkMiddleware))
+const store = createStore(
+    rootReducer, 
+    applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
+)
 
 export default store;

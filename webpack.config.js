@@ -1,9 +1,10 @@
 'use strict'
 
 let webpack = require('webpack');
+let paths = require('paths');
 
 module.exports = {
-    entry: './app/index.js',
+    entry: './app/main.js',
     output: {
         path: __dirname,
         filename: './public/bundle.js'
@@ -19,6 +20,15 @@ module.exports = {
                 query: {
                     presets: ['react', 'es2015']
                 }
+            },
+            {
+                test: /\.sass$/,
+                include: paths.appSrc,
+                loaders: ["style", "css", "sass"]
+            },
+            { 
+                test: /\.(png|jpg)$/, 
+                loader: 'url-loader?limit=8192' 
             }
         ]
     }

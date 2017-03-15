@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static('public'));
 
 //Serve the html file
-app.get('/', function (req, res, next) {
+app.get('/*', function (req, res, next) {
     res.sendFile(path.join(__dirname, './index.html'));
 });
 
@@ -16,7 +16,7 @@ app.use(function (err, req, res, next) {
 });
 
 //port for server
-app.listen(3004)
+app.listen(1333)
 
 
 module.exports = app;

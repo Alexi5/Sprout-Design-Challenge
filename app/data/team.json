@@ -1,0 +1,20 @@
+{
+  "Plan": "Team",
+  "headline": "Collaborate and conquer social media",
+  "details": {
+    "Cost Per Month": "$500",
+    "Number of Social Profiles": 30,
+    "Brand Keywords per Group": 10,
+    "Included Users": 3,
+    "Additional Users": "$125",
+    "Included Groups": 20,
+    "Audience Size": "Up to 500,000"
+  },
+  "values": {
+    "socialprofiles": 30,
+    "users": 3,
+    "audience": 500000,
+    "costPerMonth": 500,
+    "costPerUser": 125
+  }
+}

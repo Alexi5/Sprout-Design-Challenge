@@ -1,0 +1,20 @@
+{
+    "Plan": "Enterprise",
+    "headline": "Maximize your global social reach",
+    "details": {
+      "Cost Per Month": "$1,500",
+      "Number of Social Profiles": 50,
+      "Brand Keywords per Group": 20,
+      "Included Users": 10,
+      "Additional Users": "$125",
+      "Included Groups": 50,
+      "Audience Size": "Unlimited"
+    },
+    "values": {
+      "socialprofiles": "Number.MAX_SAFE_INTEGER",
+      "users": 10,
+      "audience": "Number.MAX_SAFE_INTEGER",
+      "costPerMonth": 1500,
+      "costPerUser": 125
+    }
+  }

@@ -1,0 +1,21 @@
+{
+    "plan": "Deluxe",
+    "headline": "For the social small business",
+    "details": {
+      "Cost Per Month": 59,
+      "Number of Social Profiles": 5,
+      "Brand Keywords per Group": 5,
+      "Included Users": 1,
+      "Additional Users": 59,
+      "Included Groups": 1,
+      "Audience Size (Fans/Followers)": "Up to 100,000"
+    },
+    "values": {
+      "socialprofiles": 5,
+      "users": 1,
+      "audience": 100000,
+      "costPerMonth": 59,
+      "costPerUser": 59
+    }
+  }
+}

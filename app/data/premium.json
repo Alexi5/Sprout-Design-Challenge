@@ -1,0 +1,20 @@
+{
+    "Plan": "Premium",
+    "headline": "A bigger plan for bigger social needs",
+    "details": {
+      "Cost Per Month": "$99",
+      "Number of Social Profiles": 10,
+      "Brand Keywords per Group": 10,
+      "Included Users": 1,
+      "Additional Users": "$99",
+      "Included Groups": 3,
+      "Audience Size": "Up to 200,000"
+    },
+    "values": {
+      "socialprofiles": 10,
+      "users": 1,
+      "audience": 200000,
+      "costPerMonth": 99,
+      "costPerUser": 99
+    }
+  }
